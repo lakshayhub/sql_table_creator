@@ -67,40 +67,46 @@ input, select, label, button, textarea {
   cursor: pointer;
 }
 
- #add-column-btn
- {
-  margin-top: 20px;
-  padding: 10px 26px;
-  border: none;
-  background-color: #3498db;
-  color: white;
-  border-radius: 6px;
-  cursor: pointer;
-  display: block; /* Ensure buttons stack vertically */
-  width: 10%; /* Ensure buttons span the full width */
-  flex: 1;
-  box-sizing: border-box; /* Ensure padding is included in the width */
-} 
-
+ 
+#add-column-btn,
 #generate-btn {
-  margin-top: 20px;
-  padding: 10px 26px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 10px 16px;
   border: none;
   background-color: #3498db;
   color: white;
   border-radius: 6px;
   cursor: pointer;
-  display: block; /* Ensure buttons stack vertically */
-  width: 10%; /* Ensure buttons span the full width */
-  
-  box-sizing: border-box; /* Ensure padding is included in the width */
-} 
-
-
+  flex: 1; /* Ensures buttons take up equal width */
+  text-align: center; /* Centers text inside the button */
+}
 
 #generate-btn {
   background-color: #2ecc71;
 }
+
+@media screen and (max-width: 768px) {
+  /* For screens smaller than 768px (tablets, phones) */
+  
+  #add-column-btn,
+  #generate-btn {
+    padding: 8px 12px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Smaller text size */
+    margin: 5px 0; /* Less margin between buttons */
+  }
+
+  .container {
+    padding: 20px; /* Adjust container padding for smaller screens */
+  }
+
+  textarea#ddl-output {
+    height: 150px; /* Adjust the height of the DDL output box */
+  }
+}
+
+
+
 
 #ddl-output {
   width: 100%;  /* Keeps the width fixed */
