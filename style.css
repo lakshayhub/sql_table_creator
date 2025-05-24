@@ -1,0 +1,122 @@
+body {
+  background-image: url('C:/Users/hp/Desktop/SQL Generator/istockphoto-1765370547-612x612.jpg'); /* Path to your local image */
+  background-size: cover;    /* Makes the image cover the entire page */
+  background-position: center; /* Centers the image */
+  background-attachment: fixed; /* Keeps the image fixed while scrolling */
+  background-repeat: no-repeat; /* Ensures the image doesn’t repeat */
+}
+
+.container {
+  max-width: 1050px;
+  margin: 0 auto;
+  background: #f9eaf7e7;
+  padding: 50px;
+  border-radius: 18px;
+  box-shadow: 0 20px 20px rgba(211, 40, 40, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: rgb(67, 10, 10); /* Red heading */
+  font-size: 32px; /* Bigger heading */
+}
+
+input, select, label, button, textarea {
+  font-size: 16px; /* All form elements have bigger font */
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+#table-name {
+  padding: 8px 12px;
+  width: 300px;
+  /* border: 1px solid #ccc; */
+  border: 2px solid #666; 
+  border-radius: 6px;
+}
+
+.column-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.column-row input[type="text"],
+.column-row select {
+  padding: 6px 10px;
+  /* border: 1px solid #ccc; */
+  border: 2px solid #666; 
+  border-radius: 6px;
+}
+
+.column-row label {
+  font-size: 20px;
+}
+
+.remove-column {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+ #add-column-btn
+ {
+  margin-top: 20px;
+  padding: 10px 26px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block; /* Ensure buttons stack vertically */
+  width: 10%; /* Ensure buttons span the full width */
+  flex: 1;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+} 
+
+#generate-btn {
+  margin-top: 20px;
+  padding: 10px 26px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  display: block; /* Ensure buttons stack vertically */
+  width: 10%; /* Ensure buttons span the full width */
+  
+  box-sizing: border-box; /* Ensure padding is included in the width */
+} 
+
+
+
+#generate-btn {
+  background-color: #2ecc71;
+}
+
+#ddl-output {
+  width: 100%;  /* Keeps the width fixed */
+  max-width: 1000px;  /* Keeps the maximum width */
+  height: 200px;  /* Fixed height */
+  margin-top: 20px;
+  padding: 12px;
+  border-radius: 8px;
+  /* border: 1px solid #ccc; */
+  border: 2px solid #666; 
+  font-family: monospace;
+  resize: vertical; /* Allows vertical resizing only */
+}
+
+#error-message {
+  color: red;
+  margin-top: 10px;
+  display: none;
+}

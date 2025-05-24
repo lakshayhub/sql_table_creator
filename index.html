@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SQL Table Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body style="background-image: url('istockphoto-1765370547-612x612.jpg'); background-size: cover; background-position: center; background-attachment: fixed; background-repeat: no-repeat;">
+  <div class="container">
+    <h1>SQL Table DDL Generator</h1>
+
+    <div class="form-group">
+      <label for="table-name">Table Name:</label>
+      <input type="text" id="table-name" placeholder="Enter table name" />
+    </div>
+
+    <div id="columns-container"></div>
+    
+    <button id="add-column-btn">+ Add Column</button>
+    <button id="generate-btn">Generate DDL</button>
+
+    <div id="error-message"></div>
+    
+    <textarea id="ddl-output" readonly placeholder="Your DDL will appear here..."></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
